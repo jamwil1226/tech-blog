@@ -44,6 +44,16 @@ button:hover {
     background-color: var(--secondary-color);
 }
 
+.create-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.create-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
 .post-list {
     margin: 0;
     padding: 0;
