@@ -96,6 +96,7 @@ header {
 
 header h1 {
     font-size: 50px;
+    font-weight: bold;
     color: var(--secondary-color);
     margin: 0;
     text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
@@ -106,6 +107,10 @@ header a {
     font-weight: bold;
     font-size: 50px;
     color: var(--secondary-color);
+}
+
+header a:hover {
+    color: white;
 }
     
 header nav {
@@ -120,9 +125,10 @@ header nav ul {
     list-style: none;
 }
     
-header nav ul li a {
-    font-weight: lighter;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+header nav a {
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
     
 header nav ul li a:hover {
@@ -144,8 +150,8 @@ main {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: var(--secondary-color);
-    font-size: 100%;
+    color: black;
+    font-size: 20px;
     font-weight: bold;
     transition: color .1s;
     margin-left: 16px;
@@ -153,7 +159,7 @@ main {
 
 .btn-no-style:hover {
     background: none;
-    color: var(--primary-color);
+    color: white;
 }
 
 .delete-post-btn {
@@ -186,7 +192,7 @@ main {
 }
 
 .upvote-btn:hover {
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
 }
 
 .comment-form {
@@ -199,7 +205,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #e9ecea;
 }
 
 .comment .meta {
@@ -219,9 +225,7 @@ main {
 footer {
     width: 100%;
     margin: auto;
-    border-top: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 1%;
     font-size: 25px;
     font-weight: bold;

@@ -1,4 +1,4 @@
-const { text } = require('express');
+//const { text } = require('express');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
