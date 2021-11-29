@@ -1,6 +1,6 @@
 :root {
     --primary-color: #08b3fc;
-    --secondary-color: #3fcf1f;
+    --secondary-color: #90f47a;
     --tertiary-color: #faf8f8;
 }
 
@@ -9,6 +9,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+}
+
 
 body, html {
     height: 100%;
@@ -75,6 +81,11 @@ textarea {
     min-height: 100px;
 }
 
+#post-text {
+    min-width: 40%;
+    min-height: 100px;
+}
+
 form > div {
     margin-bottom: 2%;
 }
@@ -94,9 +105,10 @@ form label {
 
 
 header {
+    margin: 0;
     padding: 25px;
     background-color: var(--primary-color);
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
@@ -121,10 +133,6 @@ header a {
 
 header a:hover {
     color: white;
-}
-    
-header nav {
-    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
     
 header nav ul {
@@ -196,14 +204,14 @@ main {
     margin: -1.5% 0 2% 0;
 }
 
-.upvote-btn {
+/* .upvote-btn {
     background-color: var(--secondary-color);
     transition: background-color .1s;
 }
 
 .upvote-btn:hover {
     background-color: var(--primary-color);
-}
+} */
 
 .comment-form {
     margin-bottom: 5%;
