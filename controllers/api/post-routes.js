@@ -4,12 +4,12 @@ const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all posts
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
   console.log('======================');
   Post.findAll({
-  //   where: {
-  //     user_id: req.session.user_id
-  // },
+    where: {
+      user_id: req.session.user_id
+  },
     attributes: [
       'id',
       'post_text',
@@ -127,7 +127,7 @@ router.put('/:id', withAuth, (req, res) => {
     });
 });
 
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', (req, res) => {
   Post.destroy(
     {
     where: {
